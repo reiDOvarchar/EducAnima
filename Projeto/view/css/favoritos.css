@@ -1,0 +1,114 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-favoritos{
+    font-size: 170%;
+    font-weight: bold;
+    margin: 3%;
+}
+
+.div-lista-desenhos{
+    width: 70%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    display: flex;
+}
+
+.div-desenho{
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.imagem-desenho{
+    width:450px;
+    height: 260px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nome-desenho{
+    margin: 5px;
+    font-size: 130%;
+}
+
+.icon-favorito{
+    height: 40px;
+    position: absolute;
+    margin: 0.8%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.icon-favorito-vazio{
+    height: 40px;
+    position: absolute;
+    margin: 0.8%;
+    z-index: 1;
+}
+
+
+.icon-favorito:hover{
+    display: none;
+}
+.icon-favorito-vazio:hover{
+    display: block;
+}
+
+@media (max-width: 1680px){
+    .imagem-desenho{
+        width: 360px;
+        height: 208px;
+    }
+    .nome-desenho{
+        width: 360px;
+    }
+}
+
+@media (max-width: 1440px){
+    .imagem-desenho{
+        width: 270px;
+        height: 156px;
+    }
+    .nome-desenho{
+        width: 270px;
+    }
+}
+
+@media (max-width: 1248px){
+    .div-lista-desenhos{
+        width: 80%;
+        
+    }
+    .div-desenho{
+        margin: 0;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1047px){
+    .div-lista-desenhos{
+        display: contents;
+    }
+    .div-desenho{
+        max-width: 100%;
+        padding: 5%;
+    }
+    .imagem-desenho{
+        width: 360px;
+        height: 208px;
+    }
+}
+
+@media (max-width: 450px){
+    .imagem-desenho{
+        width: 270px;
+        height: 156px;
+    }
+    .nome-desenho{
+        font-size: 110%;
+    }
+}
+
