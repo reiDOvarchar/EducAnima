@@ -1,0 +1,96 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    float: right;
+    background-color: rgba(244, 192, 103, 1);
+    width: 300px;
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%);
+    height: 100%;
+    /* max-height: auto; */
+    /* min-height: 100%; */
+    top: 0;
+    display: none;
+    z-index: 1;
+    
+}
+
+.menu a{
+    color: rgba(0, 0, 0);
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 130%;
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 45px;
+    position: relative;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    left: 200%;
+    transform: translate(-70px);
+    z-index: 10;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    position: relative;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  nav{
+    background-color: rgba(244, 192, 103, 1);
+  }
+
+  .imagem-usuario{
+    height: 40px;
+    margin-left: 20px;
+  }
+
+  .div-usuario{
+    right: 0;
+    overflow-block: hidden;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    
+  }
+
+  .div-nome-imagem-usuario{
+    position: absolute;
+    right: 80px;
+    overflow: hidden;
+    justify-content: end;
+    width: 50%;
+    height: 40px;
+    display: flex;
+  }
+
+  .nome-usuario{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-weight: bold;
+    font-size: 110%;
+  }
